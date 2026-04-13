@@ -1,0 +1,30 @@
+__pycache__/
+*.py[cod]
+*.pyo
+.pytest_cache/
+pytest-cache-files-*/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+build/
+dist/
+*.egg-info/
+
+# Local agent guidance
+AGENTS.md
+CLAUDE.md
+docs/repo-layout.md
+
+# Large local capture artifacts and generated reports
+*.OSV
+*.LRF
+djmd_track*.bin
+report_data/
+device_reports/**/report.html
+
+# Generated reprojection outputs and raw geometry dumps
+*.raw
+launchedpix/SampleImages/**/EquirectReprojection_*.png
+launchedpix/SampleImages/**/EquirectReprojection_*.zip
+launchedpix/SampleImages/**/EquirectReprojection_equirectangular/

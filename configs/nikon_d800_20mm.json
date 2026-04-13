@@ -1,0 +1,21 @@
+{
+  "description": "Nikon D800 + 20mm rectilinear example preserved from the launchedpix prototype.",
+  "image_path": "../launchedpix/SampleImages/NikonD80020mm/DSC_4597-Enhanced.jpg",
+  "model": "pinhole",
+  "params": [
+    4275.83888,
+    0.304005,
+    -21.5195,
+    -0.113624,
+    0.0944418,
+    -0.0177318,
+    0.0,
+    0.000191501,
+    -0.00059859,
+    0.0,
+    0.0
+  ],
+  "output_prefix": "../launchedpix/SampleImages/NikonD80020mm/EquirectReprojection",
+  "output_width": 7680,
+  "mask1_path": "../launchedpix/SampleImages/NikonD80020mm/fullmask.png"
+}

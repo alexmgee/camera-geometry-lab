@@ -1,0 +1,28 @@
+{
+  "report_type": "osv_telemetry",
+  "report_title": "DJI Osmo 360 OSV Telemetry Analysis",
+  "subtitle": "Shareable telemetry dashboard inputs for quaternion extraction and quality checks.",
+  "device_name": "DJI Osmo 360",
+  "report_slug": "device_reports/osmo-360/osv-telemetry-2026-04-12",
+  "data_file": "telemetry_report.json",
+  "primary_asset": "CAM_20260323172324_0023_D.OSV",
+  "sidecar_asset": "CAM_20260323172324_0023_D.LRF",
+  "captured_date": "2026-03-23",
+  "analysis_date": "2026-04-12",
+  "serial_redacted": true,
+  "key_findings": [
+    "Per-frame orientation quaternions were extracted successfully with ExifTool alone.",
+    "Quaternion coverage matches the full 4003-frame clip, with unit norm and smooth temporal behavior.",
+    "The LRF sidecar provides a low-resolution stitched ERP path for fast validation before full export work.",
+    "This is enough evidence to move on to body-frame ERP validation and operator stability checks."
+  ],
+  "report_notes": [
+    "The committed JSON includes all 4003 per-frame telemetry samples used by the dashboard charts and quality checks.",
+    "Raw ffprobe/exiftool dumps and the original report scratch files remain local under ignored paths.",
+    "Detailed narrative context still lives in local repo working docs that are not part of this initial shared bundle."
+  ],
+  "related_docs": [
+    "OSV_file_testing_approach.md",
+    "360_masking_gravity_aware_plan.md"
+  ]
+}

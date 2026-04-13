@@ -1,0 +1,21 @@
+{
+  "description": "3Dmakerpro Eagle Max left camera example from the original launchedpix prototype.",
+  "image_path": "../launchedpix/SampleImages/Eagle/1773019342.003189.jpg",
+  "model": "equidistant",
+  "params": [
+    1129.77431,
+    -110.626,
+    49.7195,
+    -0.0434029,
+    0.00142339,
+    -0.000211098,
+    0.0,
+    -0.000391701,
+    0.000228375,
+    0.0,
+    0.0
+  ],
+  "output_prefix": "../launchedpix/SampleImages/Eagle/EquirectReprojection",
+  "output_width": 7680,
+  "mask1_path": "../launchedpix/SampleImages/Eagle/1773019342.003189_mask.png"
+}

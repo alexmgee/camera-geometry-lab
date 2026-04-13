@@ -1,0 +1,21 @@
+{
+  "description": "Insta360 One R 1-inch wide-angle example preserved from the launchedpix prototype.",
+  "image_path": "../launchedpix/SampleImages/Insta360OneR1inch/IMG_20210522_062640_00_664.jpg",
+  "model": "equidistant",
+  "params": [
+    2300.09046,
+    48.6187,
+    52.6176,
+    0.0499776,
+    0.00096095,
+    -0.00013138,
+    0.0,
+    0.0000829386,
+    -0.000224424,
+    0.0,
+    0.0
+  ],
+  "output_prefix": "../launchedpix/SampleImages/Insta360OneR1inch/EquirectReprojection",
+  "output_width": 7680,
+  "mask1_path": "../launchedpix/SampleImages/Insta360OneR1inch/fullimagemask.png"
+}
