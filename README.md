@@ -107,9 +107,3 @@ The JSON files under `configs/` preserve calibration examples from the prototype
 | `launchedpix/` (local archive) | Original prototype and sample archive retained locally during the bootstrap transition |
 
 For the tracked device-report conventions used in this repo, see [device_reports/README.md](device_reports/README.md).
-
-## Background
-
-This project is a collaboration between an imaging science researcher (launchedpix) and a pipeline/tooling engineer. The imaging science and camera model math comes from the research side. The data pipeline, masking automation, and practical testing with real hardware comes from the engineering side.
-
-The original prototype was written as an educational tool to explore how different camera projections map onto the sphere. The 360 masking work grew out of a practical need: cleaning up DJI Osmo 360 footage for 3D Gaussian Splatting reconstruction, where the camera operator must be removed from every frame.
