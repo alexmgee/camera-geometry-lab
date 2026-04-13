@@ -6,13 +6,18 @@ This folder is the tracked, shareable slice of the first Osmo telemetry investig
 
 - `manifest.json` for report metadata and review notes
 - `telemetry_report.json` with the full tracked per-frame telemetry series
+- `osv_telemetry_report.html` interactive dashboard (self-contained, open in any browser)
+- `OSV_Telemetry_Report.md` detailed written findings
 
-## Not Included
+## Source files (too large for git)
 
-- the original `.OSV` / `.LRF` capture files
+- [CAM_20260323172324_0023_D.OSV](TODO_GDRIVE_LINK) — 1.7 GB, dual-fisheye 3840x3840 HEVC, 50fps, 80s
+- [CAM_20260323172324_0023_D.LRF](TODO_GDRIVE_LINK) — 88 MB, pre-stitched 2048x1024 equirectangular, 25fps
+
+## Not included
+
 - raw `ffprobe` and `exiftool` dumps
 - exploratory scratch outputs from `report_data/`
-- generated `report.html`
 
 ## Why this bundle exists
 
