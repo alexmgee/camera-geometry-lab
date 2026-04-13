@@ -16,6 +16,11 @@ AGENTS.md
 CLAUDE.md
 docs/repo-layout.md
 
+# Local working documents
+360_masking_gravity_aware_plan.md
+OSV_file_testing_approach.md
+launchedpix/
+
 # Large local capture artifacts and generated reports
 *.OSV
 *.LRF
