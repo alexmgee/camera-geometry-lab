@@ -56,12 +56,12 @@ The solution is to undo the gravity correction using the camera's own IMU data, 
 - [x] Extract per-frame orientation quaternions (field `3-2-9`, 50Hz, 1:1 with video)
 - [x] Validate quaternion quality (unit norm to 7 decimal places, smooth temporal evolution)
 - [x] Confirm accelerometer data present (~1g magnitude)
-- [x] Discover LRF sidecar = pre-stitched 2048x1024 equirectangular at 25fps
-- [x] Confirm GPS requires remote control (fields present but zeroed without it)
+- [x] Discover LRF sidecar = 2048x1024 side-by-side dual-fisheye preview at 25fps (not stitched ERP — see osv_investigation.md)
+- [x] GPS fields present but zeroed in local captures (remote control hypothesis is plausible but not proven — see osv_investigation_validation_response.md)
 - [x] Document simplest extraction: `exiftool -ee -a -u -n <file>.osv`
 - [x] Preserve a shareable telemetry report bundle for review and regeneration
-- [ ] Extract and test LRF equirectangular frames for quick preview workflow
-- [ ] Validate quaternion semantics (apply inverse to LRF frame, check operator stabilizes at nadir)
+- [ ] Extract and test LRF dual-fisheye preview frames (not ERP — cannot be used directly for body-frame validation)
+- [ ] Validate quaternion semantics (requires stitching raw fisheye to ERP first, or using OSV HEVC streams directly)
 
 ### Gravity-aware masking pipeline
 
@@ -92,7 +92,7 @@ pip install -e .[dev]
 camera-geometry-lab reproject --help
 ```
 
-The JSON files under `configs/` preserve calibration examples from the prototype archive. They still point at local sample data under `launchedpix/SampleImages/`, so a fresh clone should copy and edit them for a real dataset instead of expecting them to run unchanged.
+The JSON files under `configs/` reference sample data under `launchedpix/SampleImages/`, which is gitignored (large binaries). To run the examples, obtain the sample images from Mike Heath's delivery or substitute your own calibrated images.
 
 ## Repo layout
 
@@ -104,6 +104,6 @@ The JSON files under `configs/` preserve calibration examples from the prototype
 | `device_reports/` | Curated, shareable device test bundles (manifest, markdown summary, telemetry JSON) |
 | `tools/` | Repo utilities for building local artifacts from tracked report bundles |
 | `report_data/` | Ignored local scratch outputs from ad hoc telemetry analysis |
-| `launchedpix/` (local archive) | Original prototype and sample archive retained locally during the bootstrap transition |
+| `launchedpix/` | Mike Heath's educational scripts, design docs, and Alex's masking response plans (text/code tracked; large sample images gitignored) |
 
 For the tracked device-report conventions used in this repo, see [device_reports/README.md](device_reports/README.md).

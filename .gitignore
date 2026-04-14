@@ -11,15 +11,11 @@ build/
 dist/
 *.egg-info/
 
-# Local agent guidance
+# Local agent guidance and working context
 AGENTS.md
 CLAUDE.md
 docs/repo-layout.md
-
-# Local working documents
-360_masking_gravity_aware_plan.md
-OSV_file_testing_approach.md
-launchedpix/
+docs/workspace-summary.md
 
 # Large local capture artifacts and generated reports
 *.OSV
@@ -30,6 +26,9 @@ device_reports/**/report.html
 
 # Generated reprojection outputs and raw geometry dumps
 *.raw
-launchedpix/SampleImages/**/EquirectReprojection_*.png
-launchedpix/SampleImages/**/EquirectReprojection_*.zip
-launchedpix/SampleImages/**/EquirectReprojection_equirectangular/
+
+# launchedpix: track text/code/plans, ignore large binary sample data
+launchedpix/SampleImages/
+launchedpix/ProjectionMapping_Educational-*/
+launchedpix/*.mhtml
+launchedpix/*.pdf

@@ -10,13 +10,14 @@ Each report bundle should stay small enough to review in Git while still being u
 - a markdown summary (`README.md`) with the durable conclusions
 - machine-readable report data such as telemetry JSON
 - lightweight helper assets only when they materially improve review
+- an optional self-contained HTML dashboard when it is intentionally part of the shared bundle
 
 ## What stays local
 
 - original capture files such as `.OSV`, `.LRF`, and other large binaries
 - raw `ffprobe` / `exiftool` dumps
 - exploratory scratch notes and intermediate parsing outputs
-- generated HTML renders
+- ad hoc generated HTML renders such as local `report.html`
 
 Those local artifacts belong in ignored workspaces like `report_data/`.
 
