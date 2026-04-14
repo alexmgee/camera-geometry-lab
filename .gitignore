@@ -16,6 +16,7 @@ AGENTS.md
 CLAUDE.md
 docs/repo-layout.md
 docs/workspace-summary.md
+osv_investigation_validation_response.md
 
 # Large local capture artifacts and generated reports
 *.OSV
