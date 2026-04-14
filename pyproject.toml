@@ -25,6 +25,9 @@ docs = [
 [project.scripts]
 camera-geometry-lab = "camera_geometry_lab.cli:main"
 
+[tool.setuptools.packages.find]
+where = ["."]
+
 [tool.pytest.ini_options]
 addopts = "-p no:cacheprovider"
 testpaths = ["tests"]
